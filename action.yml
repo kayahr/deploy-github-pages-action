@@ -13,4 +13,4 @@ runs:
       with:
         path: ${{ inputs.path }}
     - name: Deploy to GitHub Pages
-      uses: actions/deploy-pages@v4
+      uses: actions/deploy-pages@v5
