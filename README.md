@@ -14,7 +14,7 @@ This step deploys the files in the `doc` folder, but only if branch is `main`:
 steps:
   - name: Deploy Github Pages
     if: github.ref == 'refs/heads/main'
-    uses: kayahr/deploy-github-pages-action@v1
+    uses: kayahr/deploy-github-pages-action@v4
     with:
       path: doc
 ```
