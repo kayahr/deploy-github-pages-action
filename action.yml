@@ -12,5 +12,8 @@ runs:
       uses: actions/upload-pages-artifact@v5.0.0
       with:
         path: ${{ inputs.path }}
+        name: github-pages-${{ github.run_attempt }}
     - name: Deploy to GitHub Pages
       uses: actions/deploy-pages@v5
+      with:
+        artifact_name: github-pages-${{ github.run_attempt }}
